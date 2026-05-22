@@ -15,7 +15,7 @@ html,body{
 #card{
     height: 500px;
     width: 300px;
-    background-color: aqua;
+    background-color: rgb(51, 60, 219);
     margin-top: 8%;
     margin-left: 40%;
 }
@@ -23,8 +23,10 @@ html,body{
     height: 100px;
     width: 280px;
 }
-#card p { 
-    padding-left: 6px;
+/* #card */ .para {  
+    color: rgb(206, 8, 24);
+    text-shadow: 0lvw;
+    padding-left: 10px;
     font-size: 20PX;
 
 }
@@ -34,10 +36,25 @@ html,body{
     height: 120px;
     width: 120px;
     border-radius: 50%; 
-    display: inline-block;
+    /* display: inline-block; */
+}
+.sasuke{
+    display: flex;
+    /* align-items: center; */
 }
 .sasuke span h1{
-   margin-left: 130px;
+    color: blanchedalmond;
+   margin-left: 30px;
+   margin-top: 50px;
+   /* float: left; */
   /* padding-bottom: 50px; */
    font-size: 25px;
+}
+.sasuke span p {
+    margin-left: 10px;
+    font-size: 15px;
+    margin-top: 23px;
+   /* height: auto; */
+    color: grey;    
+   
 }
