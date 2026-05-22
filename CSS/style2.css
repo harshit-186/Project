@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+}
+.parent{
+    height: 100vh;
+    /* width: 100px; */
+    background-color: rgb(200, 139, 217);
+    padding: 0.1px;
+}
+#card{
+    height: 500px;
+    width: 300px;
+    background-color: aqua;
+    margin-top: 8%;
+    margin-left: 40%;
+}
+#card span img{
+    height: 100px;
+    width: 280px;
+}
+#card p { 
+    padding-left: 6px;
+    font-size: 20PX;
+
+}
+.sasuke img{
+    margin-left: 10px;
+    margin-top: 50px;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%; 
+    display: inline-block;
+}
+.sasuke span h1{
+   margin-left: 130px;
+  /* padding-bottom: 50px; */
+   font-size: 25px;
+}
