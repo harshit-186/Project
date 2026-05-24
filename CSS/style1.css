@@ -1,70 +1,77 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html,body{
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
-.section{
-    height: 100vh;
-    background-color: #e5e5f7;
-opacity: 0.8;
-background-image: radial-gradient(circle at center center, #f00c2e, #e5e5f7), repeating-radial-gradient(circle at center center, #444cf7, #444cf7, 10px, transparent 20px, transparent 10px);
-background-blend-mode: multiply;
-    
-    padding: 0.1px;
-}
-.card{
-    height: 600px;
-    width: 400px;
-    border: 2px solid black;
-    margin-top: 16%;
-    margin-left: 43%;
-    /* border-radius: 40px; */
-}
-.img-box{
-    height: 45%;
-    /* background-color: yellowgreen; */
-    /* border-radius: 50px; */
+.section {
+  height: 100vh;
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-image:
+    radial-gradient(circle at center center, #f00c2e, #e5e5f7),
+    repeating-radial-gradient(
+      circle at center center,
+      #444cf7,
+      #444cf7,
+      10px,
+      transparent 20px,
+      transparent 10px
+    );
+  background-blend-mode: multiply;
 
+  padding: 0.1px;
 }
-.img-box img{
-    height: 100%;
-    width: 100%;
-    /* border-radius: 50px; */
+.card {
+  height: 600px;
+  width: 400px;
+  border: 2px solid black;
+  margin-top: 7%;
+  margin-left: 38%;
+  /* border-radius: 40px; */
+}
+.img-box {
+  height: 45%;
+  /* background-color: yellowgreen; */
+  /* border-radius: 50px; */
+}
+.img-box img {
+  height: 100%;
+  width: 100%;
+  /* border-radius: 50px; */
 }
 
-.info-box{
-    height: 55%;
-    background-color: rgb(56, 122, 221);
-    color: wheat;
-    padding: 40px;
-
+.info-box {
+  height: 55%;
+  background-color: rgb(56, 122, 221);
+  color: wheat;
+  padding: 40px;
 }
-.info-box h3{
-    margin-bottom: 15px;
-    background-color: brown;
-    width: fit-content;
-    padding: 4px 10px;
-    border-radius: 30px;
+.info-box h3 {
+  margin-bottom: 15px;
+  background-color: brown;
+  width: fit-content;
+  padding: 4px 10px;
+  border-radius: 30px;
 }
-.info-box h2{
-    margin-bottom: 15px;
+.info-box h2 {
+  margin-bottom: 15px;
 }
 
 .info-box p {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 
-.info-box button{
-    border: none;
-    background-color: chartreuse;
-    border-radius: 5px;
-    margin-top: 50px;
-    padding: 10px 20px;
-    cursor: pointer;
-    font: bold;
-    fint: size 16px;
-
+.info-box button {
+  border: none;
+  background-color: chartreuse;
+  border-radius: 5px;
+  margin-top: 50px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font: bold;
+  fint: size 16px;
 }
