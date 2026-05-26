@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   margin: 0px;
   padding: 0px;
@@ -126,3 +127,133 @@ body {
   width: 120px;
   margin-left: 5px;
 }
+=======
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.parent {
+  margin-top: 13%;
+  margin-left: 27%;
+  height: 300px;
+  width: 700px;
+  border-radius: 10px;
+  background-color: lightcyan;
+}
+.parent h6 {
+  color: blueviolet;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+.parent h1 {
+  font-family: "Courier New", Courier, monospace;
+  padding-left: 20px;
+  padding-top: 5px;
+}
+.parent p {
+  padding-left: 20px;
+  padding-top: 5px;
+  color: grey;
+}
+.child {
+  margin-top: 30px;
+  margin-left: 20px;
+  border-radius: 10px;
+  height: 100px;
+  width: 652px;
+  background-color: white;
+}
+#b1 {
+  margin-top: 35px;
+  margin-left: 33px;
+  height: 30px;
+  width: 75px;
+  color: aliceblue;
+  /* padding-left: 2px; */
+  background-color: blue;
+  border-radius: 5px;
+}
+#b2 {
+  /* margin-top: 35px; */
+  margin-left: 20px;
+  height: 30px;
+  width: 75px;
+  background-color: black;
+  color: wheat;
+  border-radius: 5px;
+}
+#b3 {
+  margin-left: 20px;
+  height: 30px;
+  width: 75px;
+  color: blue;
+  background-color: aliceblue;
+  border-radius: 5px;
+}
+#b4 {
+  margin-left: 20px;
+  height: 30px;
+  width: 75px;
+  border: 0px;
+  background-color: white;
+  /* text-decoration: dotted; */
+  border-radius: 5px;
+}
+#b5,
+#b6 {
+  margin-left: 20px;
+  height: 30px;
+  width: 75px;
+  border-radius: 5px;
+}
+#b5 {
+  color: white;
+  background-color: red;
+}
+#b6 {
+  color: grey;
+  background-color: lightgray;
+}
+.buttons {
+  margin-top: 15px;
+  margin-left: 20px;
+}
+.buttons button {
+  border-radius: 8px;
+  background-color: beige;
+}
+#e1,
+#e2,
+#e3,
+#e4,
+#e5 {
+  /* height: 20px; */
+  color: blue;
+  /* width: 70px; */
+}
+#e1 {
+  width: 70px;
+  margin-left: 5px;
+}
+#e2 {
+  width: 130px;
+  margin-left: 5px;
+}
+#e3 {
+  width: 90px;
+  margin-left: 5px;
+}
+#e4 {
+  width: 110px;
+  margin-left: 5px;
+}
+#e5 {
+  width: 120px;
+  margin-left: 5px;
+}
+>>>>>>> 7ff3b1da925bb480a49da9e340dd93d184e3e082
