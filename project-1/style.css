@@ -44,7 +44,7 @@ header {
 }
 section {
   color: white;
-  background-color: black;
+ background: linear-gradient(to right, rgb(17, 24, 39), rgb(75, 85, 99));
   height: calc(100vh - 64px);
   padding: 50px 0px;
   display: flex;
