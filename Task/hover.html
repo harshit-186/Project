@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body, html{
+            height: 100%;
+        }
+        body{
+            background-color: grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+         padding: 20px 40px;
+         font-size: 16px;
+         cursor: pointer;
+         border-radius: 8px;
+         border: none;
+         position: relative;
+         z-index: 1;
+         overflow: hidden;
+
+         transition: all 0.3s linear;
+        }
+        button::before{
+            content: '';
+            height: 100%;
+            width: 100%;
+            background-color: green;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate(-100%);
+            transition: all 0.3s ease-in-out;
+            z-index: -1;
+        }
+        button:hover::before{
+            transform: translate(0%);
+        }
+        button:hover{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn">Hover Me</button>
+    
+</body>
+</html>
