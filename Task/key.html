@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body,html{
+            height: 100%;
+        }
+        body{
+            background-color: black;
+        }
+        .box{
+            height: 300px;
+            width: 300px;
+            background-color: red;
+            animation-name: hex;
+            animation-duration: 2s;
+        }
+        @keyframes hex {
+            0%,100%{
+                transform: translate(0,0);
+            }
+            25%{
+                transform: translate(1100px,0);
+            }
+            50%{
+                transform: translate(1100px , 700px);
+            }
+            75%{
+                transform: translate(0px,700px);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
