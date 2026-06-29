@@ -17,30 +17,62 @@
             background-color: black;
         }
         .box{
-            height: 300px;
-            width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            width: 200px;
             background-color: red;
             animation-name: hex;
             animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+        .box h1{
+   /* color: antiquewhite; */
         }
         @keyframes hex {
             0%,100%{
                 transform: translate(0,0);
             }
+            15%{
+                transform: translate(550px,250px);
+                background-color: black;
+            }
             25%{
                 transform: translate(1100px,0);
+                background-color: aqua;
+            }
+            40%{
+                transform: translate(1100px, 250px);
+            }
+             35%{
+                transform: translate(550px,250px);
+                background-color: black;
             }
             50%{
-                transform: translate(1100px , 700px);
+                transform: translate(1100px , 500px);
+                background-color: gold;
+            }
+            60%{
+                transform: translate(550px,250px);
+                background-color: black;
             }
             75%{
-                transform: translate(0px,700px);
+                transform: translate(0px,500px);
+                background-color: green;
             }
+              80%{
+                transform: translate(1100px, 250px);
+            }
+        }
+        .box:hover{
+            animation-play-state: paused;
             
         }
     </style>
 </head>
 <body>
-    <div class="box"></div>
+    <div class="box"> <h1>Catch Me</h1></div>
 </body>
 </html>
