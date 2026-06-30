@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      body {
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .box {
+        height: 300px;
+        width: 300px;
+        border-radius: 10px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .status {
+        padding-top: 40px;
+      }
+      .loading {
+        height: 90px;
+        width: 90px;
+        border-radius: 50px;
+        border: 10px solid #80808055;
+        border-top: 10px solid aquamarine;
+
+        animation-name: hex;
+        animation-timing-function: linear;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        position: relative;
+        /* overflow: hidden; */
+      }
+      /* .loading::before{
+        content: '';
+        border-radius: 50px;
+        /* border: 10px solid greenyellow; */
+      /* position: absolute; 
+      }*/
+      .load {
+        padding-bottom: 50px;
+      }
+
+      @keyframes hex {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="status">
+        <span><h1>Loading Spinning</h1></span>
+      </div>
+      <div class="loading"></div>
+      <div class="load">Loading...</div>
+    </div>
+  </body>
+</html>

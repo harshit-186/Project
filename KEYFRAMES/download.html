@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      body {
+        background-color: black;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        height: 250px;
+        width: 600px;
+        background-color: white;
+        border-radius: 10px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .status {
+        width: 80%;
+        /* background-color: hotpink; */
+        display: flex;
+        /* justify-content: center; */
+        /* align-items: center; */
+        justify-content: space-between;
+        font-size: 22px;
+        font: bolder;
+        padding: 5px 10px;
+      }
+      .status span:nth-child(1) {
+        color: red;
+      }
+      .status span:nth-child(2) {
+        color: green;
+      }
+      .progress {
+        height: 30px;
+        width: 80%;
+        background-color: gainsboro;
+        border-radius: 50px;
+        position: relative;
+        overflow: hidden;
+      }
+      .progress::before {
+        content: "";
+        height: 100%;
+        width: 0%;
+        border-radius: 50px;
+        background-color: aqua;
+
+        animation-name: hex;
+        animation-duration: 5s;
+        /* animation-fill-mode: backwards; */
+        /* animation-direction: alternate-reverse; */
+        /* animation: linear; */
+        animation-iteration-count: infinite;
+        position: absolute;
+      }
+      @keyframes hex {
+        0% {
+          width: 0%;
+          background-color: red;
+        }
+        40% {
+          width: 40%;
+          background-color: blue;
+        }
+        60% {
+          width: 60%;
+          background-color: lightgreen;
+        }
+        90% {
+          width: 90%;
+          background-color: greenyellow;
+        }
+        100% {
+          width: 100%;
+          background-color: green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="status">
+        <span>0%</span>
+        <span>100%</span>
+      </div>
+      <div class="progress"></div>
+    </div>
+  </body>
+</html>

@@ -58,6 +58,8 @@
         cursor: pointer;
         position: relative;
         z-index: 1;
+        overflow: hidden;
+
       }
       button:hover {
         color: white;
@@ -72,7 +74,6 @@
         left: 0;
         z-index: -1;
         transition: height 0.3s ease-in-out;
-        overflow: hidden;
       }
       button:hover::before {
         height: 100%;
