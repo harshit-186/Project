@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      body{
+        background: linear-gradient(to right, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box{
+        height: 250px;
+        width: 400px;
+        background: linear-gradient(to right, rgb(156, 163, 175), rgb(75, 85, 99), rgb(30, 64, 175));
+        border-radius: 10px;
+      }
+      .balls{
+        height: 80%;
+        width: 100%;
+        /* background-color: red; */
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 18px;
+      }
+      .dot{
+        margin-bottom: 20px;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        /* border: 2px solid white; */
+
+        animation: hex .8s linear infinite ;
+      }
+      .balls :nth-child(1){
+        background-color: red;
+        animation-delay: .1s;
+      }
+      .balls :nth-child(2){
+        background-color: rgb(115, 3, 171);
+        animation-delay: .2s;
+      }
+      .balls :nth-child(3){
+        background-color: rgb(162, 255, 0);
+        animation-delay: .3s;
+      }
+      .balls :nth-child(4){
+        background-color: rgb(255, 0, 204);
+        animation-delay: .4s;
+
+      }
+      .balls :nth-child(5){
+        background-color: rgb(67, 137, 141);
+        animation-delay: .5s;
+
+      }
+      .balls :nth-child(6){
+        background-color: yellow;
+        animation-delay: .6s;
+
+      }
+      @keyframes hex {
+        0%,100%{
+            transform: translateY(0px);
+        }
+        50%{
+            transform: translateY(-100px);
+        }
+      }
+      .box h2{
+        text-align: center;
+        margin-top: 5px;
+        font-weight: bolder;
+        
+        animation: text .9s linear infinite;
+      }
+      @keyframes text {
+        0%,100%{
+            color: azure;
+        }
+        50%{
+            color: rgb(8, 8, 8);
+        }
+      }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="balls">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        <h2>Loading...</h2>
+    </div>
+</body>
+</html>
