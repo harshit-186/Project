@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html , body{
+            height: 100%;
+            width: 100%;
+        }
+        body{
+            background-color: rgb(2, 21, 13);
+            padding: 0.1px;
+        }
+        header{
+            /* background-color: red; */
+            height: 64px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 30px;
+            box-shadow: 0 0 10px grey;
+
+            flex-wrap: wrap;
+        }
+        header h2{
+            font-size: 34px;
+            color: white;
+        }
+        span{
+            /* -webkit-background-clip: none;
+            -webkit-text-fill-color: transparent;
+             background-color: blueviolet; */
+        }
+        nav{
+            display: flex;
+            gap: 20px;
+        }
+        nav a{
+             text-decoration: none;
+            color: white;
+        }
+        button{
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            background-color: transparent;
+            color: white;
+        }
+        @media (max-width:500px) {
+          nav {
+            display: none;
+          }
+          button {
+            display: none;
+          }
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h2>Div<span>.</span></h2>
+        <nav>
+           <a href="#">Home</a>
+           <a href="#">About</a>
+           <a href="#">Work</a>
+           <a href="#">Support</a>
+        </nav>
+        <button>Let's Connect</button>
+        <div class="bar"><i class="fa-solid fa-bars"></i></div>
+    </header>
+</body>
+</html>

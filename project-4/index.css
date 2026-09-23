@@ -1,0 +1,182 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #ff9a9e,
+        #fad0c4,
+        #a18cd1
+    );
+
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 90%;
+    max-width: 700px;
+
+    text-align: center;
+
+    padding: 50px 30px;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    border-radius: 25px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+    z-index: 2;
+}
+
+h1 {
+    font-size: 50px;
+    color: #ff4081;
+
+    margin-bottom: 20px;
+
+    animation: glow 1.5s infinite alternate;
+}
+
+h2 {
+    font-size: 30px;
+    color: #673ab7;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 20px;
+    color: #444;
+
+    margin: 12px 0;
+}
+
+button {
+    margin-top: 30px;
+
+    padding: 15px 30px;
+
+    border: none;
+    border-radius: 30px;
+
+    background: #ff4081;
+    color: white;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e91e63;
+    transform: scale(1.1);
+}
+
+#surprise {
+    margin-top: 25px;
+
+    font-size: 30px;
+    font-weight: bold;
+
+    color: #ff4081;
+}
+
+/* Balloons */
+
+.balloon {
+    position: absolute;
+
+    font-size: 70px;
+
+    animation: float 4s infinite ease-in-out;
+}
+
+.balloon1 {
+    left: -50px;
+    top: 20px;
+}
+
+.balloon2 {
+    right: -50px;
+    top: 30px;
+
+    animation-delay: 1s;
+}
+
+.balloon3 {
+    left: 30px;
+    bottom: -30px;
+
+    animation-delay: 2s;
+}
+
+.balloon4 {
+    right: 30px;
+    bottom: -30px;
+
+    animation-delay: 1.5s;
+}
+
+/* Animations */
+
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(-5deg);
+    }
+
+    50% {
+        transform: translateY(-30px) rotate(5deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(-5deg);
+    }
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #ff4081;
+    }
+
+    to {
+        text-shadow:
+            0 0 20px #ff4081,
+            0 0 30px #ff4081;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .balloon {
+        font-size: 45px;
+    }
+}
