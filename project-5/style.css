@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Isometra&family=Playwrite+AR+Guides&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Archivo Black", sans-serif;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg,#0a0a0a,#3a4452);
+}
+.cal{
+    border : 1px solid #717377;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0px 3px 15px rgba(113, 115 , 119 , 0.6);
+    background: transparent;
+}
+input{
+  color : white;
+    border: none;
+    width: 320px;
+    padding: 24px;
+    cursor: pointer;
+    margin: 10px;
+    text-align: end;
+    background: transparent;
+    box-shadow: rgba(113, 115 , 119 , 0.8);
+    font-size: 40px;
+}
+input::placeholder{
+    color:  whitesmoke;
+}
+button{
+/* padding: 20px; */
+width: 50px;
+cursor: pointer;
+height: 50px;
+margin:  15px 15px;
+border-radius: 50%;
+background: rgb(57, 54, 33);
+box-shadow: -2px -3px 45px 7px rgba(113, 115 , 119 , 0.9) ;
+border: none;
+color: rgb(243, 240, 237);
+}
+button.eql{
+  background-color: orange;
+}
+button.op{
+ background-color: rgb(129, 180, 53);
+}
