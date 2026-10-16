@@ -4,9 +4,9 @@ function celebrate() {
     const surprise = document.getElementById("surprise");
 
     surprise.innerHTML = `
-        🎂🎉🎈 HAPPY BIRTHDAY @! 🎈🎉🎂
+        🎂🎉🎈 HAPPY BIRTHDAY ! 🎈🎉🎂
         <br><br>
-     🥰 You Always be my Desire! 💕 
+     🥰 ! 💕 
     `;
 
     createConfetti();
